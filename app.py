@@ -5,8 +5,11 @@ Práctica 5 · Unidad 5 · Visualización de datos
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import plotly.io as pio
 
 from data_loader import load, download
+
+pio.templates.default = "plotly_dark"
 
 st.set_page_config(
     page_title="ESG Data Explorer",
